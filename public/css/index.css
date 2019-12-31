@@ -6,7 +6,7 @@
     --secondary: rgb(34, 7, 7);
     --light: #ddd;
     --dark: #ddd;
-    --overlay-color: rgba(24, 39, 51, 0.5);
+    --overlay-color: rgba(24, 39, 51, 0.7);
     --menu-speed: 0.75s;
 }
 /* CORE CSS */
@@ -357,6 +357,9 @@ footer #copyright {
         -ms-grid-rows: 1fr 30px 1fr 30px 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    #section-a .about-description {
+        text-align: center;
+    }
     #section-a .about-content-wrap > *:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -464,5 +467,15 @@ input:focus, textarea:focus, .btn:focus {
     input {
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section {
+        margin: 30px 25px 30px 25px;
+    }
+    .box-a {
+        padding-left: 0;
+        text-align: center;
     }
 }
