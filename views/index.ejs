@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's good, I'm Idode</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="../public/css/index.css"
+
+</head>
+<body>
+
+    
+    <div class="wrapper background">
+
+        <div id="hidden-menu-wrap" class="hidden-menu-wrap">
+            <!-- <span class="navbar-toggle" id="js-navbar-toggle"> -->
+                <!-- <i class="fas fa-bars"></i> -->
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                    <div></div>
+                </div>
+            <!-- </span> -->
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li class="hidden-nav-links"><a href="#section-a">about</a></li>
+                            <li class="hidden-nav-links"><a href="#section-b">selected work</a></li>
+                            <li class="hidden-nav-links"><a href="#">writing</a></li>
+                            <li class="hidden-nav-links"><a href="#section-c">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <h3>i do things.</h3>
+            </div>
+            <ul class="nav-elements" id="js-menu">
+                <li class="nav-links"><a href="#section-a">about</a></li>
+                <li class="nav-links"><a href="#section-b">selected work</a></li>
+                <li class="nav-links"><a href="#">writing</a></li>
+                <li class="nav-links"><a href="#section-c">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="inside-wrapper">
+            
+            <div class="box-container">
+                <div class="box box-a">
+                    <h3>i develop:</h3>
+                    <p>websites & mobile apps.</p>
+                    <!-- <p>mobile apps.</p> -->
+                    <p id="hire-me"><a href="#section-c">hire me.</a></p>
+                </div>
+
+                <div class="box box-b">
+                    <div class="img-container"></div>
+                    <!-- <p>[this is a photo of me layered on top of the background]</p> -->
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span class="socials">
+                <!-- <a href="mailto:idode.kerobo@gmail.com"><i class="far fa-envelope"></i></a> -->
+                <a href="https://www.instagram.com/renaissancelife/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/idode_k"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/idodekerobo"><i class="fab fa-linkedin-in"></i></a>
+            </span>
+                <span id="copyright">Idode Kerobo &copy; 2020</span>
+        </footer>
+
+
+    </div>
+    <!-- FULL SCREEN WRAPPER ENDS -->
+
+    <section class="section grid" id="section-a">
+        <h3>about me.</h3>
+        
+        <div class="about-content-wrap">
+            <div class="about-description">
+                <p>
+                    I'm a self-taught web and mobile developer who's learning everyday. I'm also interested in tech entrepreneurship, finance, venture capital, community building, and sports. <br> In my past life, I was an athlete. In my current life, I'm a washed up athlete.
+                </p>
+            </div>
+                <div class="skills current">
+                    <p style="font-weight: 500; font-size: 1.1rem">Things I Know:</p>
+                    <ul>
+                        <li>HTML(5)</li>
+                        <li>CSS(3)</li>
+                        <li>Javascript</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skills future">
+                    <p style="font-weight: 500; font-size: 1.1rem;">Things I'm Learning:</p>
+                    <ul>
+                        <li>iOS Development</li>
+                        <li>React</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+        </div>
+        
+    </section>
+
+    <section class="section grid" id="section-b">
+        <h3>selected work.</h3>
+
+        <div class="work-example">
+            <h3 style="font-size: 1.5em; margin-top: 50px">[more coming soon]</h3>
+        </div>
+
+    </section>
+
+    <section class="section grid" id="section-c">
+        <h3>contact.</h3>
+        <div class="content-wrap">
+            <form action="signup" method="POST" class="contact-form">
+                <h4>I'm currently taking freelance gigs! Reach out if you have a project you'd like me to work on.</h4>
+                <fieldset>
+                    <div class="form-wrapper">
+                        <div class="contact-info">
+                            <input name="name" placeholder="Name" type="text">
+                            <input name="email" placeholder="Email" type="email">
+                        </div>
+                        <div class="description">
+                            <textarea name="description" placeholder="Tell me a bit about what you'd like me to build."></textarea>
+                        </div>
+                    </div>
+                    </fieldset>
+                <button class="btn" type="submit">Send me a message!</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html>
