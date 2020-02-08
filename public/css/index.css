@@ -6,7 +6,7 @@
     --secondary: rgb(34, 7, 7);
     --light: #ddd;
     --dark: #ddd;
-    --overlay-color: rgba(24, 39, 51, 0.7);
+    --overlay-color: rgba(24, 39, 51, 0.8);
     --menu-speed: 0.75s;
 }
 /* CORE CSS */
@@ -103,6 +103,68 @@ a {
     height: 30px;
     opacity: 0;
 }
+/* HAMBURGER LINE */
+.hidden-menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden-menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    /* top: 100px; */
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/* Top and bottom lines */
+.hidden-menu-wrap .hamburger > div:before,
+.hidden-menu-wrap .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+/* moves top line down */
+.hidden-menu-wrap .hamburger > div:after {
+    top: 7px;
+}
+
+/* Toggler Animate */ 
+/* not styling the toggler but the immediate div after the hambuger class when toggle is checked */
+.hidden-menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.hidden-menu-wrap .toggler:checked + .hamburger > div:before,
+.hidden-menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* rotate on hover when checked */
+.hidden-menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+/* Actual Links when Overlay is Shown */
 .hidden-menu-wrap .menu {
     position: fixed;
     top: 0;
@@ -341,7 +403,7 @@ footer #copyright {
     padding: 20px 0 0 0;
 }
 .about-description {
-    text-align: justify;
+    text-align: left;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
