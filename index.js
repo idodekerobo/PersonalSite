@@ -35,6 +35,25 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+app.get('/about', (req, res) => {
+   res.render('about');
+});
+
+app.get('/work', (req, res) => {
+   res.render('work');
+});
+
+app.get('/thoughts', (req, res) => {
+   res.render('thoughts');
+});
+
+app.get('/contact', (req, res) => {
+   res.render('contact');
+});
+
+// OLD CONTACT FORM
+// I UNINSTALLED THE NODEMAILER PACKAGE
+/*
 app.post('/signup', function(req, res) {
     res.send('Thanks for reaching out!');
 
@@ -77,9 +96,10 @@ app.post('/signup', function(req, res) {
         }
     });
 });
+*/
 
 // =====================================================
-// HAVE APP LISTEN ON A SERVER
+// HAVE APP LISTEN ON SERVER
 // =====================================================
 app.listen(PORT, function() {
     console.log("App is listening on port: " + PORT + ".")
