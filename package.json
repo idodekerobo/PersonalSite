@@ -2,9 +2,6 @@
   "name": "personalsite",
   "version": "1.0.0",
   "description": "my personal website",
-  "engines": {
-     "node": "14.15.0"
-  },
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -15,8 +12,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
-    "ghost-cli": "^1.15.3"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
