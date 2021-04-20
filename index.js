@@ -31,7 +31,6 @@ app.use('/public',express.static(path.join(__dirname,'/public')));
 // APP ROUTES
 // =====================================================
 app.get('/', function(req, res) {
-    // res.send("hi");
     res.render('index');
 });
 
