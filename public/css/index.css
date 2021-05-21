@@ -132,8 +132,35 @@ main p {
 }
 
 /* GREEN MISSION */
-#ig-page {
+.ig-page-wrapper {
    background-color: #105927;
+   width: 100vw;
+   height: 100vh;
+   display: -ms-grid;
+   display: grid;
+   justify-items: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   grid-auto-columns: 1fr;
+       grid-template-areas: 
+      '.    .     .     .     nav'
+      '.    main  main  main  nav'
+      '.    main  main  main  . '
+      '.    main  main  main  . '
+      '.    foot  foot  foot  . ';
+}
+@media (max-width: 400px) {
+   .ig-page-wrapper {
+      background-color: #105927;
+      width: 100%;
+      height: 100%;
+      row-gap: 50px;
+          grid-template-areas: 
+         'nav'
+         'main'
+         'foot';
+   }
 }
 .ig-page-div-wrapper {
    background-color: #105927;
