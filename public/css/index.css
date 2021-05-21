@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* ENTIRE PAGE/CORE CSS */
 html {
    -webkit-box-sizing: border-box;
@@ -31,7 +38,7 @@ body {
        -ms-flex-align: center;
            align-items: center;
    grid-auto-columns: 1fr;
-   grid-template-areas: 
+       grid-template-areas: 
       '.    .     .     .     nav'
       '.    main  main  main  nav'
       '.    main  main  main  . '
@@ -123,12 +130,20 @@ main p {
    text-decoration: underline;
    font-weight: 600;
 }
+
+/* GREEN MISSION */
 .ig-page {
    background-color: #105927;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   /* padding: 40px; */
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 #afe-mission-header {
    color: white;
@@ -136,6 +151,8 @@ main p {
 .afe-mission-wrapper {
    color:white;
 }
+/* ===================== */
+
 /* FOOTER */
 footer {
    margin: 40px 0;
@@ -168,7 +185,7 @@ footer {
       width: 100%;
       height: 100%;
       row-gap: 50px;
-      grid-template-areas: 
+          grid-template-areas: 
          'nav'
          'main'
          'foot';
