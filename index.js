@@ -50,6 +50,10 @@ app.get('/contact', (req, res) => {
    res.render('contact');
 });
 
+app.get('/afe-mission', (req, res) => {
+   res.render('afe-mission');
+});
+
 app.get('/afe-privacy-policy', (req, res) => {
    res.render('afe-privacy-policy');
 })
