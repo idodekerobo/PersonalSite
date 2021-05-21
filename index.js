@@ -59,7 +59,7 @@ app.get('/afe-privacy-policy', (req, res) => {
 })
 
 app.get('/afe-mission-2', (req, res) => {
-   res.render('afe-mission-2');
+   res.render('afe-mission-2');  
 })
 
 // OLD CONTACT FORM
