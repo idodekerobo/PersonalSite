@@ -123,6 +123,16 @@ main p {
    text-decoration: underline;
    font-weight: 600;
 }
+.ig-page {
+   background-color: #105927;
+   /* padding: 40px; */
+}
+#afe-mission-header {
+   color: white;
+}
+.afe-mission-wrapper {
+   color:white;
+}
 /* FOOTER */
 footer {
    margin: 40px 0;

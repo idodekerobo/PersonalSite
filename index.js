@@ -58,6 +58,10 @@ app.get('/afe-privacy-policy', (req, res) => {
    res.render('afe-privacy-policy');
 })
 
+app.get('/afe-mission-2', (req, res) => {
+   res.render('afe-mission-2');
+})
+
 // OLD CONTACT FORM
 // I UNINSTALLED THE NODEMAILER PACKAGE
 /*
