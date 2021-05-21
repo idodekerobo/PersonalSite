@@ -132,7 +132,10 @@ main p {
 }
 
 /* GREEN MISSION */
-.ig-page {
+#ig-page {
+   background-color: #105927;
+}
+.ig-page-div-wrapper {
    background-color: #105927;
    display: -webkit-box;
    display: -ms-flexbox;
