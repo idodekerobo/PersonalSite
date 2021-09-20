@@ -122,8 +122,11 @@ main {
 main p {
    margin: 10px 0;
    -ms-flex-item-align: start;
+   /* comment out these lines to center */
        align-self: flex-start;
-   text-align: left;
+      text-align: left;
+   /* comment out these lines to center */
+   /* text-align: center; */
    line-height: 1.5;
 }
 .afe-tag-line {
@@ -140,6 +143,54 @@ footer {
    margin: 0 15px;
 }
 
+/* green for marketing materials */
+/* #135826 */
+/* #105927 ?? */ 
+#afe-green {
+   background-color: #105927;
+   color: 'white';
+}
+#afe-mission-header {
+   color: white;
+   /* margin-left: -45px; */
+}
+#afe-mission-wrapper {
+   color: white;
+   margin: 0 auto;
+}
+.img-wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-right: auto;
+   margin-left: auto;
+}
+/* #signature {
+   margin-right: 20px;
+} */
+.slight-margin {
+   margin-left: 10px;
+}
+ul {
+   margin: 0;
+   color: white;
+ }
+ ul.dashed {
+   list-style-type: none;
+ }
+ ul.dashed > li {
+   text-indent: -5px;
+ }
+ ul.dashed > li:before {
+   content: " - ";
+   text-indent: -5px;
+ }
+img {
+   /* image-rendering: crisp-edges; */
+   image-resolution: 367dpi;
+   /* width: 90%; */
+   /* height: auto; */
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 800px) {
    footer {
